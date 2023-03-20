@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.continer{
+    position: relative;
+    margin: 0 90px;
+    margin-top: 50px;
+    width: 85%;
+}
+header{
+    display: flex;
+    left: 90px;
+    bottom: 50px;
+}
+.continer{
+    width: 100%;
+    height: 100vh;
+}
+.logo{
+    left: 90px;
+    bottom: 50px;
+}
+.logo img{
+    width: 300px;
+    left: 90px;
+    bottom: 50px;
+}
+    
+.searcharea{
+    position: fixed;
+    right: 90px;
+    top: 50px;
+    width: 170px;
+    height: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    box-sizing: border-box;
+    z-index: 1;
+    border: 1px solid rgb(146, 146, 146, 0.1);
+}
+.searcharea input{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+    color: #1f1f1f;
+    font-size: 1rem;
+    padding: 0px 10px;
+    background-color: transparent;
+}
+.section1 img{
+    width: 400px;
+    position: relative;
+}
+.section1text{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%,-50%);
+}
+.section1text h2{
+    font-size: 50px;
+}
+.section1text b{
+    font-size: 100px;
+    color: orange;
+    border: 1px solid red;
+    background-color: black;
+    box-shadow: 5px 5px  30px hsl(0, 59%, 32%);
+}
+.section1text .textcolor{
+    color: #fc0643;
+}
+.section1text button{
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    font-size: large;
+    outline: none;
+    background-color: #0026ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.section1text button a{
+    text-decoration: none;
+    color: #fff;
+}
+.section1text button:hover{
+    box-shadow: 5px 5px 10px gray,-5px -5px 30px gray;
+    transition: all ease-in-out 0.2s;
+}
+.socialicon{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 30px rgb(0, 0, 0,0.1);
+    padding: 5px 1px;
+    z-index: 1;
+}
+.socialicon img{
+    width: 20px;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.socialicon img:hover{
+    position: relative;
+    background-color: rgb(236, 15, 15);
+}
+.productsection{
+    width: 85%;
+    background-color: #fff;
+    box-shadow: 2px 2px 30px rgba(196, 190, 190,0.2);
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    background-size: 1000px;
+    border-radius: 10px;
+}
+.productsection h2 .productertext{
+    color: #fc0643;
+    text-align: center;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    width: 100%;
+}
+.product .productbox{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+}
+.product .productbox img{
+    height: 180px;
+}
+.product .productbox p{
+    color: #917c7c;
+    padding: 10px 0;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+}
+.product .productbox a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: rgb(34, 9, 9);
+    font-weight: bold;
+    text-decoration: none;
+}
+.product .productbox .btn{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -20px;
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    background: linear-gradient(120deg, #6b60ec 20%, #a166f4);
+    color: #fff;
+    display: none;
+    transition: all ease 0.2s;
+
+}
+.product .productbox:hover .btn{
+    display: flex;
+}
+.product .productbox:hover .btn:hover{
+    background: linear-gradient(180deg, #d6e41b 20%, #f3d13a);
+    color: #1f1f1f;
+    transition: all ease-in 0.2s;
+}
+.product .productbox:hover p{
+    font-size: 1.2rem;
+    color: #1f1f1f;
+    font-weight: bold;
+    transition: all ease-in 0.2s;
+}
+.product .productbox:hover{
+    box-shadow: 2px 2px 30px rgba(65, 11, 11,0.5);
+    background-color: #ffffff;
+}
+.offer{
+    position: absolute;
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    top: 1000px;
+}
+.offer .offerbox{
+    width: 40% ;
+}
+.offer .offerbox h1{
+    font-size: 30px;
+}
+.offer .offerbox .ofercolor{
+    color: rgb(194, 6, 6);
+    padding: 1px;
+}
+.offer .offerbox .offrtbuton{
+    position: relative;
+    width: 250px;
+    height: 40px;
+    background: linear-gradient(340deg, rgba(204, 4, 177, 0.945) 20%, #ff0968);
+    padding: 10px 10px;
+    left: 50%;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.offer .offerbox .offrtbuton:hover{
+    background: linear-gradient(340deg, rgba(243, 239, 26, 0.945) 20%, #ccfc20);
+    box-shadow: 5px 5px 30px rgba(73, 45, 9, 0.5);
+    color: #000;
+    transition: all ease-in 0.2s;
+}
+.subsarea{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    top: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 30px gray;
+}
+.subsarea h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.subinput{
+    width: 500px;
+    background-color: #fff;
+    border-radius: 7% 7% 7% 7% / 50% 50% 50% 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+.subinput input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.subinput a{
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
+    background-color: #ff0968;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 2px 2px 30px rgba(128, 128, 128, 0.103);
+}
+footer{
+    background-color: #000 !important;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 1000px;
+    bottom: 0;
+}
